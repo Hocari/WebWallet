@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <h1>Login to Your Blockchain Wallet</h1>
+    <form action="{{ url_for('login') }}" method="post">
+      <label for="seed">Seed:</label>
+      <input type="text" id="seed" name="seed">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

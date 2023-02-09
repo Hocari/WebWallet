@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign in</title>
+  </head>
+  <body>
+    <h1>Sign in</h1>
+    <form method="post">
+        <input type="text" name="seed_phrase">
+        <input type="submit" value="Submit">
+      </form>
+      
+      {% if address %}
+        <p>Your wallet address is: {{ address }}</p>
+      {% endif %}
+      
+  </body>
+</html>

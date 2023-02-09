@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Wallet</title>
+  </head>
+  <style>
+    * {
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #161B21;
+    }
+  </style>
+  <body>
+    <h1>Create your Hocari Wallet</h1>
+    <form action="{{ url_for('create_wallet') }}" method="post">
+      <input type="text" name="username">
+      <input type="submit" value="Create Wallet">
+    </form>
+    <p>Seed Phrase: {{ wallet_address }}</p>
+    <p>Wallet Address: {{ seed_phrase }}</p>
+    <p>Your username: {{ username }}</p>
+    
+  </body>
+</html>
